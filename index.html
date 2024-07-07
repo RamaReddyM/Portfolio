@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rama Reddy Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+.home {
+    display: flex;
+    justify-content: center; /* Centers the flex items horizontally */
+    padding: 0 20px; /* Adds space on both left and right sides */
+    max-width: 1200px; /* Optional: Limits the maximum width of the container */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+.home-left {
+    flex: 1; /* Makes the left column take up 1 part of the available space */
+    padding-right: 20px; /* Adds space to the right of the image */
+}
+
+.home-right {
+    flex: 1; /* Makes the right column take up 1 part of the available space */
+    padding-left: 20px; /* Adds space to the left of the text */
+    text-align: left; /* Align text to the left within the right column */
+}
+.social-media .btn {
+    width: 45px; /* Set the width of the button */
+    height: 45px; /* Set the height of the button */
+    border-radius: 50%; /* Make the buttons circular */
+    border-width: 2px; /* Width of the border */
+    border-style: solid; /* Style of the border */
+    padding: 10px; /* Adjust padding as needed */
+    margin: 3px; /* Adjust margin as needed */
+    
+    background-color: transparent; /* Transparent background */
+}
+
+.social-media .btn:hover {
+    background-color: #ffffff; /* Background color on hover */
+}
+
+
+
+.social-icon {
+    width: 25px; /* Set the width of the icon */
+    height: 25px; /* Set the height of the icon */
+    border-radius: 50%; /* Make the icon circular */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+/* Education */
+
+
+.resume-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* Full height of the box */
+    width: 8px; /* Width of the side border */
+    background-color: #ffbd39; /* Border color */
+    border-top-left-radius: 8px; /* Rounded top-left corner */
+    border-bottom-left-radius: 8px; /* Rounded bottom-left corner */
+}
+
+
+/* Experience  Timeline */
+
+  
+  
+  .timeline {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+	width: 500px;
+	position: relative;
+  }
+  
+  .timeline::before {
+	content: "";
+	position: absolute;
+	top: 60px; /* adjust the top position to match the top of the first box */
+	left: 14px; /* adjust to center the line with the dots */
+	bottom: 0;
+	width: 2px;
+	background-color: #FFD700; /* goldish yellow */
+	border-radius: 10px;
+  }
+  
+  .timeline-item {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	position: relative;
+  }
+  
+  .timeline-circle {
+	width: 20px;
+	height: 20px;
+	background-color: #FFD700; /* goldish yellow */
+	border-radius: 50%;
+	position: absolute;
+	left: 5px; /* adjust to center the dot on the line */
+	top: 0;
+	z-index: 1;
+  }
+  
+  .timeline-content {
+	padding: 10px;
+	background-color: #fff; /* box background is black */
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+	width: 350px;
+	margin-left: 40px; /* add margin to move the box to the right */
+	color: #fff; /* white text color */
+  }
+  
+  .timeline-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #000;
+  }
+  
+  .timeline-description {
+	font-size: 14px;
+	color: #000; /* white text color */
+  }
+  .icon img.rounded-circle {
+	border-radius: 50%; /* Ensure the image is perfectly circular */
+  }
+  
+
+
+
+
+
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Rama Reddy Medapati</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#intern-section" class="nav-link"><span>Internship</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<!--<div class="one-third js-fullheight order-md-last img" >-->
+
+					<div class="circle-container">
+						<img src="images/myimg.jpg" alt="My Image"height="700" width="100">
+					  
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Rama Reddy Medapati</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Student  ',
+						'Web Developer  ',
+						'Python Developer  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            
+			           <!-- <p><a href="https://www.linkedin.com/in/ramareddym/" class="btn btn-primary py-2 px-2">
+							<img src="https://th.bing.com/th/id/OIP.WbP2N4M5QjG24ntMED-G0wHaHa?w=152&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;">
+						
+						</a> 
+							<a href="https://github.com/RamaReddyM" class="btn btn-primary py-2 px-2">
+								<img src="https://th.bing.com/th/id/OIP.rIONbwiwOm_V37ef5VAyDwHaFj?w=216&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;">
+							  </p>   </div>-->
+							  <p><a href="https://www.linkedin.com/in/ramareddym/" class="btn btn-primary py-2 px-2">Linkedin</a>
+								<a href="https://www.linkedin.com/in/ramareddym/" class="btn btn-primary py-2 px-2">GitHub</a>
+									</p>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+<div class="aboutme">
+	<div class="home">
+		<div class="home-left">
+			<img src="images/aboutme.jpg" alt="my logo" height="500" width="500">
+		</div>
+		<div class="home-right">
+			<h3 style="padding: 0px;margin: 0px;">Hey! It'sme</h3>
+			<h1 style="padding: 0px;margin: 0px;">Rama Reddy Medapati</h1>
+			<h3 style="padding: 0px;margin: 0px;">And i'm a</h3>
+			<p style="padding: 0px;margin: 0px;">passionate final year student exploring the exciting world of Computer Science.My journey involves mastering HTML, CSS, JavaScript, Python, and  fundamentals of java , with a strong focus on becoming a proficient web developer.  always eager to learn, and ready to take on new challenges. Eager to craft engaging and user-centric websites, I'm on a journey of continuous learning and hands-on projects. Let's connect and share insights on this exciting path of web development! 💻✨</p>
+			
+			<div class="social-media">
+				<a href="https://www.linkedin.com/in/ramareddym/" class="btn btn-outline-primary py-2 px-2">
+					<img src="images/linkedin.jpg" class="social-icon">
+				</a> 
+				<a href="https://github.com/RamaReddyM" class="btn btn-outline-primary py-2 px-2">
+					<img src="images/github.jpg" class="social-icon">
+				</a>
+				<a href="mailto:ramareddym77@gmail.com" class="btn btn-outline-primary py-2 px-2">
+					<img src="images/mail.jpg" class="social-icon">
+				</a>
+				
+			</div><br>
+
+			<div class="col-md-6 text-center ftco-animate">
+				<p><a href="images/resume.jpg" download="resume.jpg" class="btn btn-primary py-3 px-4">Download Resume</a></p>
+			</div>
+			 
+			  </div>
+			  
+			</div>	  	
+		</div>
+		  <br>
+		  <br>
+		
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		
+		<div class="row">
+			<div class="col-md-4">
+				<div class="resume-wrap ftco-animate">
+					<div class="resume-content">
+						<span class="date">2021-2025</span>
+						<h2>Bachelor of Engineering</h2>
+						<span class="position">Pydah College Of Engineering</span>
+						<p class="mt-4">Grade: 8.00 CGPA (up to 5th sem)</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-md-4">
+				<div class="resume-wrap ftco-animate">
+					<div class="resume-content">
+						<span class="date">2019-2021</span>
+						<h2>Intermediate</h2>
+						<span class="position">Aditya Engineering College</span>
+						<p class="mt-4">Grade: 9.13 CGPA</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="resume-wrap ftco-animate">
+					<div class="resume-content">
+						<span class="date">2017-2018</span>
+						<h2>SSC</h2>
+						<span class="position">MPL HS Rathnampeta </span>
+						<p class="mt-4">Grade: 9.2 CGPA </p>
+					</div>
+					</div>
+					</div>
+		</div>
+	</section>
+	<center>
+    <section class="ftco-section ftco-no-pb" id="intern-section">
+    	<div class="container">
+			<div class="timeline">
+				<h1>Internship Experience</h1>
+			  <div class="timeline-item">
+				<div class="timeline-circle"></div>
+				<div class="timeline-content">
+				  <h2 class="timeline-title">Frontend Developer</h2>
+				  <p class="timeline-description">July 2024-Aug 2024 <br> Company: InternDev Pvt Ltd</p>
+				  
+						</div>
+			  </div>
+			  <div class="timeline-item">
+				<div class="timeline-circle"></div>
+				<div class="timeline-content">
+				  <h2 class="timeline-title">Web Development Intern</h2>
+				  <p class="timeline-description">Mar 2024 - Apr 2024 <br> Company:Digital Bhem </p>
+				  	</div>
+			  </div>
+			  <div class="timeline-item">
+				<div class="timeline-circle"></div>
+				<div class="timeline-content">
+				  <h2 class="timeline-title">ML With Python Intern</h2>
+				  <p class="timeline-description">July 2023 - Aug 2023 <br> Company: Skill Dunia <br> collabration with Ecell IIT Hyderabad</p>
+				  	</div>
+			  </div>
+			  <div class="timeline-item">
+				<div class="timeline-circle"></div>
+				<div class="timeline-content">
+				  <h2 class="timeline-title">Java Programming Intern</h2>
+				  <p class="timeline-description">Jun 2023 - July 2023 <br> Company:LearnWik </p>
+				  	</div>
+			  </div>
+			</div>
+		  </div>
+		</center>
+		  
+<br>
+<br>		  
+
+		
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Projects on Web Development and Python.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/RamaReddyM/Spam-Detection" class="block-20 zoom-effect" style="background-image: url('images/project1.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading">Email Spam Detection</a></h3>
+                <p>Implemented Email Spam Detection using Naive Bayes classifier with CountVectorizer for text tokenization and Streamlit for interactive web app deployment.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/RamaReddyM/Blog-Website" class="block-20 zoom-effect" style="background-image: url('images/project2.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading">Blog Website Using MongoDB</a></h3>
+                <p>Developed a dynamic Blog website with MongoDB integration for seamless article creation, editing, and deletion functionalities.</p>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/RamaReddyM/Registration-Form" class="block-20 zoom-effect" style="background-image: url('images/project3.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading">Registration Form Using MongoDB</a></h3>
+			  <p>Implemented a registration form integrated with MongoDB for storing user data securely</p>
+			</div>
+		  </div>
+		</div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/RamaReddyM/DIGIBHEM/tree/main/ToDoList" class="block-20 zoom-effect" style="background-image: url('images/project4.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">To-Do-List</h3> 
+				  <p>Created a dynamic To-Do List web application with task management and filtering features using HTML, CSS, and JavaScript.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/RamaReddyM/DIGIBHEM/tree/main/Calculator" class="block-20 zoom-effect" style="background-image: url('images/project5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">Dark and Light Theme Calculator </h3>
+				  <p>Developed a stylish calculator with dynamic dark and light theme switching using HTML, CSS, and JavaScript.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/RamaReddyM/DIGIBHEM/tree/main/StopWatch" class="block-20 zoom-effect" style="background-image: url('images/project6.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">Stop Watch </h3>
+				  <p>Created an interactive Stopwatch website using HTML, CSS, and JavaScript for precise timekeeping.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Contact</h1>
+			  <h2 class="mb-4">Contact Me</h2>
+			  <p>Below are the details to reach out to me!</p>
+			</div>
+		  </div>
+	  
+		  <div class="row justify-content-center mb-5">
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<a href="mailto:ramareddym77@gmail.com">
+							<img src="images/mailLogo.jpg" class="rounded-circle img-fluid">
+						</a>
+					</div>
+					<h3 class="mb-4">Email address</h3>
+					<p><a href="mailto:ramareddym77@gmail.com">ramareddym77@gmail.com</a></p>
+				</div>
+			</div>
+			
+		
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<a href="tel:+916300000000">
+							<img src="images/CallLogo.jpg" class="rounded-circle img-fluid">
+						</a>
+					</div>
+					<h3 class="mb-4">Contact</h3>
+					<p><a href="tel:+916300000000">+91 6300000000</a></p>
+				</div>
+			</div>
+		
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<a href="https://maps.google.com/?q=Machavaram,%20India" target="_blank" rel="noopener noreferrer">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<img src="images/addressLogo.jpg" class="rounded-circle img-fluid">
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Machavaram, India</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		  
+			  
+
+		  <div class="container">
+			<br>
+				<br>
+				<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					<li class="ftco-animate normal-txt">Find me on</li>
+					<li class="ftco-animate">
+						<a href="https://www.linkedin.com/in/ramareddym/" target="_blank">
+							<img src="images/LinkedinLogo" alt="LinkedIn" style="max-width: 30px;">
+						</a>
+					</li>
+					<li class="ftco-animate">
+						<a href="https://instagram.com/calm_guy_chinna" target="_blank">
+							<img src="images/InstaLogo.jpg" alt="Instagram" style="max-width: 30px;">
+						</a>
+					</li>
+					<li class="ftco-animate">
+						<a href="https://www.facebook.com/chinna.reddym.94" target="_blank">
+							<img src="images/fblogo.jpg" alt="Facebook" style="max-width: 30px;">
+						</a>
+					</li>
+				</ul>
+				
+				
+				
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <br>@Rama Reddy Medapati</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+ <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+   <script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
